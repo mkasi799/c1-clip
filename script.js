@@ -34,19 +34,21 @@ continueButton.addEventListener("click", () => {
 
     meetingInterface.style.display = "flex";
 
+
     /* START ALL VIDEOS AT 30 SECONDS */
 
-    videos.forEach(video => {
+    videos.forEach(async (video) => {
 
-    video.addEventListener("loadedmetadata", () => {
+    video.currentTime = startTime;
 
-        video.currentTime = startTime;
-
-    }, { once: true });
-
-    video.play();
+    try {
+        await video.play();
+    } catch (err) {
+        console.error(err);
+    }
 
 });
+
 
     /* P2 STARTS TALKING */
 
