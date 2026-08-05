@@ -39,15 +39,14 @@ continueButton.addEventListener("click", () => {
 
     videos.forEach(async (video) => {
 
-    video.currentTime = startTime;
+        video.currentTime = startTime;
 
-    try {
-        await video.play();
-    } catch (err) {
-        console.error(err);
-    }
-
-});
+        try {
+            await video.play();
+        } catch (err) {
+            console.error(err);
+        }
+    });
 
 
     /* P2 STARTS TALKING */
