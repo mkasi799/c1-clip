@@ -38,11 +38,15 @@ continueButton.addEventListener("click", () => {
 
     videos.forEach(video => {
 
+    video.addEventListener("loadedmetadata", () => {
+
         video.currentTime = startTime;
 
-        video.play();
+    }, { once: true });
 
-    });
+    video.play();
+
+});
 
     /* P2 STARTS TALKING */
 
