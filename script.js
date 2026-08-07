@@ -88,8 +88,7 @@ videos.forEach(video => {
 
             setTimeout(() => {
 
-                window.location.href =
-                "https://mtroyal.ca1.qualtrics.com/jfe/form/SV_2gALFMRats3XuBw?return=c1";
+                window.close();
 
             }, 500);
 
