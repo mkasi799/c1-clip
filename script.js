@@ -1,4 +1,4 @@
-const startTime = 30;
+const startTime = 26;
 const endTime = 60;
 
 /* ELEMENTS */
@@ -35,7 +35,7 @@ continueButton.addEventListener("click", () => {
     meetingInterface.style.display = "flex";
 
 
-    /* START ALL VIDEOS AT 30 SECONDS */
+    /* START ALL VIDEOS AT 26 SECONDS */
 
     videos.forEach(async (video) => {
 
@@ -57,7 +57,7 @@ continueButton.addEventListener("click", () => {
             speakerMic.style.display = "none";
         }
 
-    }, 5000);
+    }, 4000);
 
     /* P2 STOPS TALKING */
 
@@ -67,7 +67,7 @@ continueButton.addEventListener("click", () => {
             speakerMic.style.display = "block";
         }
 
-    }, 10000);
+    }, 21000);
 
 });
 
